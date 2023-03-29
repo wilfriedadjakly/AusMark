@@ -1,0 +1,193 @@
+body {
+  border: 3px solid red;
+}
+
+.rotating-text-wrapper {
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rotating-text-wrapper h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0.3em;
+  color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.rotating-text-wrapper h2:nth-child(1) {
+  background-color: lightseagreen;
+  animation-name: rotating-text-1;
+}
+@keyframes rotating-text-1 {
+  0% {
+    transform: translateY(200%);
+  }
+  33% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+}
+.rotating-text-wrapper h2:nth-child(2) {
+  background-color: tomato;
+  animation-name: rotating-text-2;
+}
+@keyframes rotating-text-2 {
+  33% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+}
+.rotating-text-wrapper h2:nth-child(3) {
+  background-color: cornflowerblue;
+  animation-name: rotating-text-3;
+}
+@keyframes rotating-text-3 {
+  66% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  99% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rotating-text-wrapper {
+    font-size: 0.7rem;
+  }
+  .real-estate-housing {
+    flex-direction: column;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+/* p {
+  line-height: 2;
+} */
+
+img {
+  height: 200px;
+  /* width:50px; */
+}
+
+.image-1 {
+  /* float: left; */
+  /* line-height: 2; */
+  margin-right: 30px;
+  /* width: 100%; */
+}
+
+/* h3 {
+  text-align: center;
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding-bottom: 10px;
+} */
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.copyright {
+  color: silver;
+  font-size: 0.75rem;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover {
+  color: gold;
+}
+
+.contact-message {
+  /* width: 40%; */
+  margin: 40px auto 60px;
+}
+.bottom-container {
+  margin-top: 20px;
+}
+.real-estate-housing {
+  border: 2px solid red;
+  width: 100%;
+  /* height: 250px; */
+  display: flex;
+  align-items: center;
+}
+.real-estate-housing img {
+  flex-basis: 50%;
+  height: 100%;
+}
+.real-estate-title {
+  flex-basis: 50%;
+  height: 100%;
+}
+.real-estate-title p {
+  color: red;
+}
+
+.business-marketing {
+  border: 2px red;
+  align-items: center;
+}
+.business-marketing p {
+  color: red;
+}
